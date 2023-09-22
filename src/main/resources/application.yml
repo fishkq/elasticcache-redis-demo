@@ -1,0 +1,25 @@
+server:
+  port: 8000
+spring:
+  # general redis begin
+#  redis:
+#    host: [url]
+#    port: [port]
+#    timeout: 20000
+#    database: 0
+#    password: [password]
+  # general redis end
+  # aws elasticcache redis cluster begin
+  redis:
+    # 1
+#    host: [url]
+#    port: [port]
+    # 2
+#    host: [url]
+#    port: [port]
+#    cluster:
+#      nodes: [node1url:node2port,...]
+    # 3
+    cluster:
+      nodes: [url:port]
+  # aws elasticcache redis cluster end
